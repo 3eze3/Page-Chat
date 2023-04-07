@@ -1,0 +1,11 @@
+// --------- Reset ---------
+@use "base/reset_tags";
+@use "base/fonts";
+// --------- Components ---------
+@use "components/content_mobile";
+@use "components/mesages";
+@use "components/form";
+// --------- Layout ---------
+@use "layout/main";
+@use "layout/mobile";
+@use "layout/header_mobile";

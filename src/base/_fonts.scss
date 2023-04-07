@@ -1,0 +1,41 @@
+@use "../abtract/variable" as colors_font;
+@font-face {
+  font-family: rubik-bold;
+  src: url(../assets/fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+  font-family: rubik-regular;
+  src: url(../assets/fonts/Rubik-Regular.ttf);
+}
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: rubik-regular;
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: colors_font.$lg;
+  color: colors_font.$very-dark-desaturated-violet;
+  letter-spacing: 0.06rem;
+}
+
+h1 + p {
+  font-size: colors_font.$md;
+}
+
+p {
+  font-size: colors_font.$sm;
+  color: colors_font.$dark-grayish-violet;
+  line-height: 1.5;
+}
+h2,
+span,
+button {
+  font-family: rubik-bold;
+  color: colors_font.$white;
+}
