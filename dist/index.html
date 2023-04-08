@@ -12,35 +12,27 @@
     <title>Frontend Mentor | Page-Chat</title>
   </head>
   <body>
-    <main class="">
-      <section class="">
-        <h1 class="">Simple booking</h1>
-        <p class="">
-          Stay in touch with our dog walkers through the chat interface. This
-          makes it easy to discuss arrangements and make bookings. Once the walk
-          has been completed you can rate your walker and book again all through
-          the chat.
-        </p>
-      </section>
-      <section class="">
+    <main class="main">
+      <section class="main__mobile mobile">
         <h2 class="hidden">Text hidden</h2>
+        <div class="mobile__camera"></div>
         <!-- header -->
-        <header class="">
-          <img src="" alt="<" />
-          <div class="">
-            <div class="">
-              <img src="" alt="" />
+        <header class="mobile__perfil">
+          <img class="mobile__back" src="" alt="h" aria-hidden="true" />
+          <div class="mobile__wrapper">
+            <div class="mobile__avatar">
+              <img src="" alt="h" />
             </div>
-            <div class="">
-              <h2 class="">Samuel Green</h2>
-              <small class=""> Available to Walk</small>
+            <div class="mobile__userInformation">
+              <h2 class="mobile__name">Samuel Green</h2>
+              <small class="mobile__status"> Available to Walk</small>
             </div>
           </div>
-          <img class="" src="" alt="" />
+          <img class="mobile__settings" src="" alt="h" aria-hidden="true" />
         </header>
         <!-- Content-->
-        <div class="">
-          <div class="">
+        <div class="mobile__content">
+          <div class="mobile__">
             <p class="">That sounds great. I’d be happy with that.</p>
             <p class="">
               Could you send over some pictures of your dog, please?
@@ -80,6 +72,15 @@
           <input type="text" name="" id="" />
           <button>></button>
         </form>
+      </section>
+      <section class="main__introduction">
+        <h1 class="main__title">Simple booking</h1>
+        <p class="main__description">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
       </section>
     </main>
   </body>
