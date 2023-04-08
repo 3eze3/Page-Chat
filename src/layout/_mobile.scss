@@ -1,0 +1,13 @@
+.mobile {
+  position: relative;
+  &__camera {
+    width: 10.5rem;
+    height: 2.4rem;
+    position: absolute;
+    top: -0.65rem;
+    left: calc(50% - 5.25rem);
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    background-color: #fff;
+  }
+}
