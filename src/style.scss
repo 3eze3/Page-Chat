@@ -2,6 +2,7 @@
 @use "base/reset_tags";
 @use "base/fonts";
 // --------- Components ---------
+@use "components/hidden";
 @use "components/content_mobile";
 @use "components/mesages";
 @use "components/form";
