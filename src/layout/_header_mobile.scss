@@ -11,27 +11,20 @@
       colors_bg.$light-violet,
       colors_bg.$light-magenta
     );
-    border-top-left-radius: 0.85rem;
-    border-top-right-radius: 0.85rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    border-radius: 0.5rem;
+    border-top-left-radius: 0.9rem;
+    border-top-right-radius: 0.9rem;
+    @include layout.flex($justify: space-between, $direction: row, $gap: 0);
   }
   &__information {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.1rem;
+    @include layout.flex($direction: row, $gap: 0.1rem);
   }
   &__back {
     width: 1.5rem;
     filter: brightness(100%) invert(1);
   }
   &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 0.75rem;
+    @include layout.flex($justify: flex-start, $direction: row, $gap: 0.75rem);
   }
   &__avatar {
     width: 2.15rem;
@@ -39,11 +32,7 @@
     border: solid 2px colors_bg.$very-light-magenta;
   }
   &__userInformation {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 0.25rem;
+    @include layout.flex($aling: flex-start, $gap: 0.25rem);
   }
   &__name {
     font-size: 0.8em;
@@ -55,7 +44,6 @@
 
   &__settings {
     width: 1.25rem;
-
     filter: brightness(100%) invert(1);
   }
 }
