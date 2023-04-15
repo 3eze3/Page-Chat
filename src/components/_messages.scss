@@ -1,0 +1,19 @@
+@use "../abtract/variable" as colors_bg;
+.content {
+  &__messages {
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0.25rem;
+    color: colors_bg.$moderate-violet;
+    hyphens: auto;
+    &--left {
+      max-width: fit-content;
+      padding-inline: 0.5rem;
+      border-radius: 1rem;
+      border-bottom-right-radius: 0.25rem;
+      color: colors_bg.$desaturated-dark-violet;
+      background-color: colors_bg.$white;
+    }
+  }
+}
