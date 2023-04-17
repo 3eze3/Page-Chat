@@ -3,7 +3,7 @@
   @include layout.flex($aling: flex-start, $gap: 1rem);
   padding: 0.5rem;
   &__wrapper {
-    max-width: 12rem;
+    max-width: 10rem;
     @include layout.flex($aling: flex-start, $gap: 0.25rem);
     &--left {
       align-self: flex-end;
@@ -14,7 +14,7 @@
     @include layout.flex($justify: flex-end, $direction: row, $gap: 0.5rem);
   }
   &__image {
-    width: 4rem;
+    width: 3.5rem;
     border-radius: 1rem;
   }
   &__opcions {
