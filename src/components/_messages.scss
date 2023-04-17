@@ -2,13 +2,15 @@
 .content {
   &__messages {
     padding-block: 0.5rem;
-    padding-inline: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
     border-radius: 1rem;
     border-bottom-left-radius: 0.25rem;
     hyphens: auto;
     color: colors_bg.$moderate-violet;
     background-color: #ddd0d06d;
     line-height: 1.4;
+    margin-bottom: 0.25rem;
     &--left {
       max-width: fit-content;
       padding-inline: 0.5rem;
