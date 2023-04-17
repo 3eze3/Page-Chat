@@ -1,13 +1,33 @@
+@use "../abtract/mixin" as layout;
+@use "../abtract/variable" as colors_bg;
 .content {
-  &__build {
-    outline: solid red 1px;
-  }
   &__options {
+    width: 14rem;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem 0.7rem;
+    border-radius: 0.5rem;
+    border-bottom-left-radius: 0.25rem;
+    @include layout.flex($justify: space-between, $direction: row, $gap: 0);
+    background-image: linear-gradient(
+      90deg,
+      colors_bg.$light-magenta,
+      colors_bg.$light-violet
+    );
+  }
+  &__circle {
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    outline: solid 1px colors_bg.$very-light-magenta;
   }
   &__information {
+    @include layout.flex($direction: row, $gap: 1rem);
   }
   &__description {
+    color: colors_bg.$white;
+    letter-spacing: 0.06em;
   }
   &__price {
+    font-size: 0.8em;
   }
 }
