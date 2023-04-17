@@ -5,8 +5,10 @@
     padding-inline: 1rem;
     border-radius: 1rem;
     border-bottom-left-radius: 0.25rem;
-    color: colors_bg.$moderate-violet;
     hyphens: auto;
+    color: colors_bg.$moderate-violet;
+    background-color: #ddd0d06d;
+    line-height: 1.4;
     &--left {
       max-width: fit-content;
       padding-inline: 0.5rem;
