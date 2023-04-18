@@ -4,8 +4,8 @@
   &__options {
     width: 14rem;
     margin-bottom: 0.5rem;
-    padding: 0.8rem 0.7rem;
-    border-radius: 0.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.7rem;
     border-bottom-left-radius: 0.25rem;
     @include layout.flex($justify: space-between, $direction: row, $gap: 0);
     background-image: linear-gradient(
