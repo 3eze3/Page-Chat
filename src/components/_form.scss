@@ -1,9 +1,35 @@
+@use "../abtract/mixin" as layout;
+@use "../abtract/variable" as colors_bg;
 .mobile {
   &__form {
-    outline: solid red 1px;
+    max-width: 93%;
+    height: 2.5rem;
+    margin-inline: auto;
+    padding-block: 0.75rem;
+    padding-inline: 0.4rem;
+    @include layout.flex($justify: space-between, $direction: row, $gap: 0);
+    position: relative;
+    border-radius: 2rem;
+    background-color: colors_bg.$white;
   }
   &__flagMessage {
+    width: 0.0625rem;
+    height: 0.0625rem;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+  }
+  &__enterMessage {
+    width: 100%;
+    padding-inline: 0.5rem;
+    font-size: 0.8em;
+    outline-color: transparent;
+    color: colors_bg.$moderate-violet;
   }
   &__send {
+    width: 2.4rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: colors_bg.$very-dark-desaturated-violet;
   }
 }
