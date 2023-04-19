@@ -62,6 +62,7 @@ label {
   src: url(../assets/fonts/Rubik-Regular.ttf);
 }
 body {
+  width: 100%;
   min-height: 100vh;
   font-size: 16px;
   font-family: rubik-regular;
@@ -72,19 +73,20 @@ body {
 }
 
 h1 {
-  font-size: 3.25em;
+  font-size: 2.1em;
   color: hsl(271deg, 36%, 24%);
   letter-spacing: 0.06rem;
+  margin-bottom: 1.25rem;
 }
 
 h1 + p {
-  font-size: 1.1em;
+  font-size: 0.95em;
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 0.55em;
   color: hsl(270deg, 7%, 64%);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 h2,
@@ -92,6 +94,291 @@ span,
 button {
   font-family: rubik-bold;
   color: hsl(0deg, 0%, 100%);
+}
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+.content__wrapper {
+  max-width: 10rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.content__wrapper--left {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+.content__images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.content__image {
+  width: 3.5rem;
+  border-radius: 1rem;
+}
+.content__opcions {
+  max-width: fit-content;
+}
+
+.content__messages {
+  padding-block: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0.25rem;
+  hyphens: auto;
+  color: hsl(276deg, 55%, 52%);
+  background-color: rgba(221, 208, 208, 0.4274509804);
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+.content__messages--left {
+  max-width: fit-content;
+  padding-inline: 0.5rem;
+  border-radius: 1rem;
+  border-bottom-right-radius: 0.25rem;
+  color: hsl(271deg, 15%, 43%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.content__options {
+  width: 14rem;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.7rem;
+  border-bottom-left-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0;
+  background-image: linear-gradient(90deg, hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+}
+.content__circle {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  outline: solid 1px hsl(289deg, 100%, 72%);
+}
+.content__information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.content__description {
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 0.06em;
+}
+.content__price {
+  font-size: 0.8em;
+}
+
+.mobile__form {
+  max-width: 93%;
+  height: 2.5rem;
+  margin-inline: auto;
+  padding-block: 1.25rem;
+  padding-inline: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0;
+  position: relative;
+  border-radius: 2rem;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.mobile__flagMessage {
+  width: 0.0625rem;
+  height: 0.0625rem;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+.mobile__enterMessage {
+  width: 100%;
+  padding-inline: 0.5rem;
+  font-size: 0.8em;
+  outline-color: transparent;
+  color: hsl(276deg, 55%, 52%);
+}
+.mobile__send {
+  width: 2.4rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: hsl(271deg, 36%, 24%);
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 7rem;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    padding-block: 7rem;
+  }
+}
+.main__introduction {
+  max-width: 35rem;
+  padding-right: 5rem;
+}
+@media screen and (max-width: 480px) {
+  .main__introduction {
+    text-align: center;
+    max-width: 21rem;
+    padding-right: 0;
+  }
+}
+.main__description {
+  hyphens: none;
+}
+.main__mobile {
+  width: 20rem;
+  height: 40rem;
+  border: 0.8rem solid hsl(0deg, 0%, 100%);
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.75rem 0.4rem rgba(0, 0, 0, 0.067);
+  background-color: hsl(270deg, 20%, 96%);
+  margin-left: 9rem;
+}
+@media screen and (max-width: 480px) {
+  .main__mobile {
+    margin-left: 0;
+  }
+}
+.main::after, .main::before {
+  content: "";
+  width: 35rem;
+  height: 44rem;
+  position: absolute;
+  z-index: -1;
+}
+@media screen and (max-width: 480px) {
+  .main::after, .main::before {
+    width: 26rem;
+    height: 38rem;
+  }
+}
+.main::after {
+  top: 0;
+  left: -7rem;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-image: linear-gradient(180deg, hsl(293deg, 100%, 63%) 1%, hsl(264deg, 100%, 61%) 90%);
+}
+@media screen and (max-width: 480px) {
+  .main::after {
+    left: -15rem;
+  }
+}
+.main::before {
+  bottom: 0;
+  right: -12rem;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  background-color: rgba(190, 156, 156, 0.076);
+}
+
+.mobile {
+  position: relative;
+}
+.mobile__camera {
+  width: 10.5rem;
+  height: 2.2rem;
+  position: absolute;
+  top: -0.5rem;
+  left: calc(50% - 5.25rem);
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.mobile__perfil {
+  min-height: 6rem;
+  padding-top: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  background-image: linear-gradient(90deg, hsl(264deg, 100%, 61%), hsl(293deg, 100%, 63%));
+  border-radius: 0.5rem;
+  border-top-left-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0;
+}
+.mobile__information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.1rem;
+}
+.mobile__back {
+  width: 1.5rem;
+  filter: brightness(100%) invert(1);
+}
+.mobile__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+.mobile__avatar {
+  width: 2.15rem;
+  border-radius: 50%;
+  border: solid 2px hsl(289deg, 100%, 72%);
+}
+.mobile__userInformation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.mobile__name {
+  font-size: 0.8em;
+}
+.mobile__status {
+  font-size: 0.6em;
+  color: hsl(276deg, 100%, 81%);
+}
+.mobile__settings {
+  width: 1.25rem;
+  filter: brightness(100%) invert(1);
 }
 
 /*# sourceMappingURL=style.css.map */
