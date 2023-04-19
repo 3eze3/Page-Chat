@@ -15,5 +15,3 @@
 .DS_Store
 /design
 *.txt
-/dist/style_min.css
-/dist/style_min.css.map
