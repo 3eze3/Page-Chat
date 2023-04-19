@@ -5,7 +5,7 @@
     max-width: 93%;
     height: 2.5rem;
     margin-inline: auto;
-    padding-block: 1.4rem;
+    padding-block: 1.25rem;
     padding-inline: 0.4rem;
     @include layout.flex($justify: space-between, $direction: row, $gap: 0);
     position: relative;
