@@ -1,12 +1,12 @@
 @use "../abtract/variable" as colors_font;
 @font-face {
   font-family: rubik-bold;
-  src: url(../assets/fonts/Rubik-Bold.ttf);
+  src: url(assets/fonts/Rubik-Bold.ttf);
 }
 
 @font-face {
   font-family: rubik-regular;
-  src: url(../assets/fonts/Rubik-Regular.ttf);
+  src: url(assets/fonts/Rubik-Regular.ttf);
 }
 body {
   width: 100%;
