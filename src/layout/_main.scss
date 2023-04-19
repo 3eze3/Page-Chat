@@ -4,11 +4,20 @@
   width: 100%;
   min-height: 100vh;
   @include layout.flex($direction: row, $gap: 7rem);
+  @include layout.break-media(max-width, 480px) {
+    @include layout.flex($gap: 5rem);
+    padding-block: 7rem;
+  }
   position: relative;
   overflow: hidden;
   &__introduction {
     max-width: 35rem;
     padding-right: 5rem;
+    @include layout.break-media(max-width, 480px) {
+      text-align: center;
+      max-width: 21rem;
+      padding-right: 0;
+    }
   }
   &__description {
     hyphens: none;
@@ -21,18 +30,28 @@
     box-shadow: 0.2rem 0.75rem 0.4rem rgba(0, 0, 0, 0.067);
     background-color: colors_bg.$light-grayish-violet;
     margin-left: 9rem;
+    @include layout.break-media(max-width, 480px) {
+      margin-left: 0;
+    }
   }
   &::after,
   &::before {
     content: "";
     width: 35rem;
     height: 44rem;
+    @include layout.break-media(max-width, 480px) {
+      width: 26rem;
+      height: 38rem;
+    }
     position: absolute;
     z-index: -1;
   }
   &::after {
     top: 0;
     left: -7rem;
+    @include layout.break-media(max-width, 480px) {
+      left: -15rem;
+    }
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     background-image: linear-gradient(
